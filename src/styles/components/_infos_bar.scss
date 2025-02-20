@@ -1,0 +1,45 @@
+.infos-bar{
+    padding: 16px 24px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: space-between;
+
+
+    &__infos{
+        display: flex;
+        gap: 40px;
+
+        &__item{
+            font-size: 14px;
+            color: #000;
+
+            b{
+                font-size: 18px;
+                display: block;
+                color: #000;
+            }
+        }
+    }
+
+    @media (max-width: 640px){
+        flex-direction: column;
+        gap: 16px;
+
+        &__infos{
+            gap: 16px;
+
+            &__item{
+                font-size: 12px;
+
+                b{
+                    font-size: 16px;
+                }
+            }
+            
+        }
+    }
+
+    @media (max-width: 1024px){
+        gap: 16px;
+    }
+}
